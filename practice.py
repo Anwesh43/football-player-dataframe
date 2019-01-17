@@ -6,5 +6,36 @@ players = {
     "ball wins" : [33, 22, 5, 11, 17]
 }
 df = pd.DataFrame(players)
-df.index = ["Lucas Torreira", "Matteo Guendouzi", "Mesit Ozil", "Aaron Ramsey", "Granit Xhaka"]
+df.index = ["Lucas Torreira", "Matteo Guendouzi", "Mesut Ozil", "Aaron Ramsey", "Granit Xhaka"]
 print(df)
+
+## printing columns of df
+print("all columns")
+print(df.columns)
+
+print("--------")
+print("________")
+
+kp_of_all = df.loc[:,["Key Passes"]]
+print("key passes of all players")
+print(kp_of_all)
+
+print("--------")
+print("________")
+
+bw_of_all = df.loc[:, ["ball wins"]]
+print("ball wins of all players")
+print(bw_of_all)
+
+print("--------")
+print("________")
+
+lt_stats = df.loc[["Lucas Torreira"]]
+print("stats for Lucas Torreira")
+print(lt_stats)
+
+print("--------")
+print("________")
+mo_stats = df.loc[["Mesut Ozil"]]
+print("Mesut Ozil stats")
+print(mo_stats)
